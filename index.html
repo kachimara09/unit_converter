@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class ="container">
+            <div class="upper">
+                <h2>Metric/ Imperial Unit Conversion</h2>
+                <input type="text" id="input-field" onkeypress="return isNumberKey(event)">
+                <button id="input-btn">Convert</button>
+            </div>
+            <div class="lower">
+                <div id="length">
+                    <h3>Length (Meter/Feet)</h3>
+                    <p id="pl"></p>
+                </div>
+                <div id="volume">
+                    <h3>Volume (Liter/Gallons)</h3>
+                    <p id="pv"></p>
+                </div>
+                <div id="mass">
+                    <h3>Mass (Kilogram/Pounds)</h3>
+                    <p id="pm"></p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
